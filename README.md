@@ -13,7 +13,7 @@
 | Cerebellum|7|
 | Brain stem|8|
 # Preprocessing steps
-<img src="./res/pre.png" align="left" style="margin: 10 10 10 10;" width='1000'>
+<img src="./res/pre.png" align="left" style="margin: 10 10 10 10;" width='1000'> 
 <ul>
 &nbsp
 <li>Registered and Bias Field Correction was already done in the dataset
