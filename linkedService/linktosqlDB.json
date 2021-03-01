@@ -1,0 +1,12 @@
+{
+	"name": "linktosqlDB",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=aditya-data.database.windows.net;initial catalog=aditya_movies_data;user id=adityarajora",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkFESVRZQS1EQVRBLUZBQ1RPUlktMV9iZTJkMzNmMC0wOWMzLTRhOTAtYWU2MC05ZDM0NTg0MDNmNDMiDQp9"
+		}
+	}
+}
