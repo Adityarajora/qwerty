@@ -1,0 +1,12 @@
+{
+	"name": "TempSQLdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linktosqlDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
