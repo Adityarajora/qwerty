@@ -1,0 +1,46 @@
+{
+	"name": "CarsSqlDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linktosqlDB",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "price",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "bhp",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
+	}
+}
