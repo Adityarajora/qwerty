@@ -14,10 +14,13 @@
 		"eventTrigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
 		},
-		"trigger1_properties_triggers_parameters_FileName": {
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
+		},
+		"MyTrigger_properties_pipeline1_parameters_FileName": {
 			"value": "@triggerBody().fileName"
 		},
-		"trigger1_properties_typeProperties_scope": {
+		"MyTrigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
 		},
 		"containerUri": {

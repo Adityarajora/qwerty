@@ -19,11 +19,15 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
 		},
-		"trigger1_properties_triggers_parameters_FileName": {
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
+		},
+		"MyTrigger_properties_pipeline1_parameters_FileName": {
 			"type": "string",
 			"defaultValue": "@triggerBody().fileName"
 		},
-		"trigger1_properties_typeProperties_scope": {
+		"MyTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
 		},
@@ -63,11 +67,14 @@
 					"eventTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('eventTrigger_properties_typeProperties_scope')]"
 					},
-					"trigger1_properties_triggers_parameters_FileName": {
-						"value": "[parameters('trigger1_properties_triggers_parameters_FileName')]"
-					},
 					"trigger1_properties_typeProperties_scope": {
 						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
+					},
+					"MyTrigger_properties_pipeline1_parameters_FileName": {
+						"value": "[parameters('MyTrigger_properties_pipeline1_parameters_FileName')]"
+					},
+					"MyTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('MyTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
