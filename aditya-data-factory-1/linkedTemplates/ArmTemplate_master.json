@@ -15,19 +15,19 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'linktosqlDB'"
 		},
-		"eventTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
-		},
-		"trigger1_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
-		},
 		"MyTrigger_properties_pipeline1_parameters_FileName": {
 			"type": "string",
 			"defaultValue": "@triggerBody().fileName"
 		},
 		"MyTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
+		},
+		"eventTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
+		},
+		"trigger1_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
 		},
