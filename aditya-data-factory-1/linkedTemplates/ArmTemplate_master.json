@@ -39,6 +39,14 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
 		},
+		"trigger4_properties_pipeline1_parameters_FileName": {
+			"type": "string",
+			"defaultValue": "@triggerBody().fileName"
+		},
+		"trigger4_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -93,6 +101,32 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "aditya-data-factory-1_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"trigger4_properties_pipeline1_parameters_FileName": {
+						"value": "[parameters('trigger4_properties_pipeline1_parameters_FileName')]"
+					},
+					"trigger4_properties_typeProperties_scope": {
+						"value": "[parameters('trigger4_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'aditya-data-factory-1_ArmTemplate_0')]"
+			]
 		}
 	]
 }
