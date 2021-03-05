@@ -35,6 +35,12 @@
 		"trigger4_properties_typeProperties_scope": {
 			"value": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
 		},
+		"trigger5_properties_pipeline1_parameters_FileName": {
+			"value": "@triggerBody().fileName"
+		},
+		"trigger5_properties_typeProperties_scope": {
+			"value": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
+		},
 		"containerUri": {
 			"value": ""
 		},

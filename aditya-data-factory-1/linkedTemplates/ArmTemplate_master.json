@@ -47,6 +47,14 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
 		},
+		"trigger5_properties_pipeline1_parameters_FileName": {
+			"type": "string",
+			"defaultValue": "@triggerBody().fileName"
+		},
+		"trigger5_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f8c21ef5-1827-4a74-a263-aad531215eb4/resourceGroups/aditya_resource_group_1/providers/Microsoft.Storage/storageAccounts/adityarajorastorage1"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -121,6 +129,12 @@
 					},
 					"trigger4_properties_typeProperties_scope": {
 						"value": "[parameters('trigger4_properties_typeProperties_scope')]"
+					},
+					"trigger5_properties_pipeline1_parameters_FileName": {
+						"value": "[parameters('trigger5_properties_pipeline1_parameters_FileName')]"
+					},
+					"trigger5_properties_typeProperties_scope": {
+						"value": "[parameters('trigger5_properties_typeProperties_scope')]"
 					}
 				}
 			},
