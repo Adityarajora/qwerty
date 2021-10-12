@@ -5,4 +5,4 @@ scikit-image==0.15.dev0
 nibabel==2.3.2
 numpy==1.15.4
 matplotlib==3.0.2
-opencv-contrib-python==3.4.2.16
+opencv-contrib-python==4.2.0.32
